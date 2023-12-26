@@ -1,0 +1,174 @@
+.header {
+  background-color: #010e0f;
+  padding: 25px 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo_img {
+  width: 200px;
+  margin-right: 25px;
+}
+
+.header__logo_text {
+  color: #e5c97b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  width: 200px;
+}
+
+.header__contact,
+.header__contact_disable {
+  display: flex;
+}
+
+.header__mail {
+  margin-right: 75px;
+}
+
+.header__mail_text {
+  color: #767676;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.header__mail_link {
+  color: #f0d683;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.header__social_links {
+  margin-right: 75px;
+}
+
+.header__social_link {
+  width: 40px;
+  height: 40px;
+}
+
+.header__social_icon {
+  margin-right: 20px;
+}
+
+.header__call {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.header__number {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.header__back_call {
+  color: #f0d683;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  border-bottom: 1px dashed #f0d683;
+  width: 115px;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 1180px) {
+  .header__wrapper {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header__contact {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .header__mail {
+    margin-right: unset;
+  }
+
+  .header__social_links {
+    margin-right: unset;
+  }
+  .header__contact_disable {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__contact {
+    flex-wrap: wrap;
+  }
+
+  .header__call {
+    width: 100%;
+    align-items: center;
+  }
+
+  .header__mail,
+  .header__social_links {
+    margin-bottom: 10px;
+  }
+
+  .header__logo_text {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .header__mail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__social_links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
