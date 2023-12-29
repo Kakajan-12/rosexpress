@@ -26,7 +26,9 @@ export default component$(() => {
 
           <div
             class={
-              isOpen.value ? styles.header__contact : styles.header__contact_disable
+              isOpen.value
+                ? styles.header__contact
+                : styles.header__contact_disable
             }
           >
             <div class={styles.header__mail}>

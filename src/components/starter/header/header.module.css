@@ -5,6 +5,8 @@
   margin: auto;
   display: flex;
   align-items: center;
+  position: fixed;
+  z-index: 2;
 }
 
 .header__wrapper {
@@ -26,6 +28,7 @@
 
 .header__logo_text {
   color: #e5c97b;
+  font-family: Noto Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -44,6 +47,7 @@
 
 .header__mail_text {
   color: #767676;
+  font-family: Noto Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -52,16 +56,11 @@
 
 .header__mail_link {
   color: #f0d683;
+  font-family: Noto Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1500px;
-  width: 100%;
 }
 
 .header__social_links {
@@ -85,6 +84,7 @@
 
 .header__number {
   color: #fff;
+  font-family: Oranienbaum;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -95,12 +95,13 @@
 
 .header__back_call {
   color: #f0d683;
+  font-family: Noto Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
   border-bottom: 1px dashed #f0d683;
-  width: 115px;
+  width: 121px;
 }
 
 .header__burger {
