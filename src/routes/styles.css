@@ -22,6 +22,7 @@ html {
 body {
   color: var(--qwik-dark-text);
   overflow-x: hidden;
+  background: #1C1C1C;
 }
 
 /* HEADINGS ------------------------------------- */
@@ -79,7 +80,7 @@ code {
 
 ul {
   margin: 0;
-  padding-left: 20px;
+  padding: 0;
 }
 
 p{
@@ -91,7 +92,6 @@ p{
   margin: 0 auto;
   max-width: 1500px;
   width: 100%;
-  padding: 0 20px;
 }
 
 
