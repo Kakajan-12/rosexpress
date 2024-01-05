@@ -11,7 +11,7 @@ export default component$(() => {
 
   return (
     <header class={styles.header}>
-      <div class={["container"]}>
+      <div class={styles.header__container}>
         <div class={styles.header__wrapper}>
           <div class={styles.header__logo}>
             <ImgLogo class={styles.header__logo_img} alt="logo" />
@@ -33,7 +33,10 @@ export default component$(() => {
           >
             <div class={styles.header__mail}>
               <p class={styles.header__mail_text}>E-mail:</p>
-              <a class={styles.header__mail_link} href="#">
+              <a
+                class={styles.header__mail_link}
+                href="mailto:rosexpress-msk@yandex.ru"
+              >
                 rosexpress-msk@yandex.ru
               </a>
             </div>
@@ -52,7 +55,10 @@ export default component$(() => {
               <a class={styles.header__number} href="tel:8 (800) 333-89-01">
                 8 (800) 333-89-01
               </a>
-              <a href="#" class={styles.header__back_call}>
+              <a
+                href="mailto:rosexpress-msk@yandex.ru"
+                class={styles.header__back_call}
+              >
                 Обратный звонок
               </a>
             </div>

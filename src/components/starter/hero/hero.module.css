@@ -1,5 +1,5 @@
 .main {
-  background-image: url(/public/images/back.png);
+  background-image: url(/public/images/back.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -11,7 +11,7 @@
   padding: 90px 20px 180px;
   position: relative;
   margin: 0 auto;
-  max-width: 1500px;;
+  max-width: 1500px;
 }
 
 .main__lamp {
@@ -94,10 +94,12 @@
   border-radius: 15px;
   background: linear-gradient(180deg, #062b2e 0%, #17868d 50.52%, #17868d 100%);
   padding: 25px;
-  max-width: 210px;
+  max-width: 260px;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 100%;
+  cursor: pointer;
 }
 .main__youtube_icon {
   width: 68px;
@@ -138,6 +140,30 @@
   justify-content: center;
   margin-bottom: 16px;
   max-width: 270px;
+  transition: all ease-in 0.5s;
+  overflow: hidden;
+  position: relative;
+}
+
+.main__booking_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 90px;
+  background-color: #F0D683;
+  transform: translate(-110%, 50%) skew(50deg);
+  transition: 0.5s;
+}
+
+.main__booking_btn:hover::before {
+  transform: translate(-5%, 0) skew(-15deg);
+}
+
+.main__booking_btn:hover button {
+  background: #f0d683;
+  transition: all ease-in 0.5s;
 }
 
 .main__booking_btn button {
@@ -152,6 +178,8 @@
   line-height: 120%;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: all ease-in 0.5s;
+  z-index: 1;
 }
 
 .main__booking p {
@@ -167,7 +195,7 @@
 .main__booking_arrow {
   position: absolute;
   top: 45px;
-  right: -100px;
+  right: -110px;
 }
 
 .main__card {
@@ -178,8 +206,9 @@
     rgba(123, 63, 10, 0.5) 95.39%
   );
   padding: 70px 42px 0;
-  height: 300px;
-  max-width: 200px;
+  height: 370px;
+  max-width: 275px;
+  width: 100%;
 }
 
 .main__card span {
@@ -241,37 +270,37 @@
 }
 
 @media (max-width: 768px) {
-  .main__lamp{
+  .main__lamp {
     display: none;
   }
-  .main__wrapper{
+  .main__wrapper {
     padding: 190px 20px 180px;
   }
 }
 
 @media (max-width: 534px) {
-  .main__header h1{
+  .main__header h1 {
     font-size: 45px;
   }
-  .main__header p{
+  .main__header p {
     font-size: 24px;
   }
   .main__booking_btn {
     max-width: 200px;
   }
-  .main__booking_btn button{
+  .main__booking_btn button {
     font-size: 14px;
   }
-  .main__booking_arrow{
+  .main__booking_arrow {
     top: 30px;
   }
 }
 
-@media (max-width:414px) {
-  .main__header h1{
+@media (max-width: 414px) {
+  .main__header h1 {
     font-size: 36px;
   }
-  .main__header p{
+  .main__header p {
     font-size: 20px;
   }
 }

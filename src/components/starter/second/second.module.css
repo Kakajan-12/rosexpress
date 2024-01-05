@@ -1,5 +1,7 @@
 .second {
   background: linear-gradient(180deg, #010e0f 79.28%, rgba(1, 14, 15, 0) 100%);
+  padding-bottom: 110px;
+  overflow-x: clip;
 }
 
 .counter {
@@ -54,6 +56,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+      margin-top: -60px;
 }
 
 .second__header {
@@ -79,17 +82,16 @@
   padding: 50px 0;
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 .second__content_black {
   border-radius: 40px;
   background: #3d3d3d;
   padding: 40px 36px 0;
-  max-width: 480px;
+  max-width: 560px;
   margin-right: 62px;
   position: relative;
-  min-height: 750px;
+  min-height: 790px;
   height: 100%;
 }
 
@@ -97,6 +99,7 @@
   position: absolute;
   left: -265px;
   bottom: -55px;
+  max-width: unset;
 }
 
 .second__content_black h3 {
@@ -134,10 +137,10 @@
   border-radius: 40px;
   background: #ffffff;
   padding: 40px 36px 0;
-  max-width: 480px;
+  max-width: 560px;
   margin-left: 62px;
   position: relative;
-  min-height: 750px;
+  min-height: 790px;
   height: 100%;
 }
 
@@ -153,8 +156,9 @@
 
 .second__content_white img {
   position: absolute;
-  left: -65px;
-  bottom: -55px;
+  left: -50px;
+    bottom: -50px;
+  max-width: unset;
 }
 
 .second__content_white li {
@@ -175,8 +179,13 @@
   max-width: 220px;
   margin-right: 10px;
 }
+
 .second__link_items {
   display: flex;
+}
+
+.second__link_item {
+  cursor: pointer;
 }
 .second__link_item:first-child {
   margin-right: 20px;
@@ -203,6 +212,7 @@
   .second__content_black {
     max-width: 600px;
     margin-right: 0;
+    min-height: 850px;
   }
 
   .second__content_black img {
@@ -213,6 +223,7 @@
     margin-top: 100px;
     max-width: 600px;
     margin-left: 0;
+    min-height: 850px;
   }
 
   .second__content_white img {
@@ -220,18 +231,32 @@
     bottom: -100px;
   }
 }
+@media (max-width: 768px) {
+    .second{
+        padding: 0 20px;
+    }
+    .second__content_black{
+        min-height: 900px;
+    }
 
+}
 @media (max-width: 534px) {
+  .counter__count {
+    font-size: 64px;
+  }
+  .counter__text {
+    font-size: 16px;
+  }
     .second__header{
         font-size: 30px;
     }
 
     .second__content_black h3{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .second__content_white h3{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .second__content_list li{
@@ -261,24 +286,3 @@
     }
 }
 
-@media (max-width: 768px) {
-    .second{
-        padding: 0 20px;
-    }
-    .second__content_black{
-        min-height: 900px;
-    }
-
-    .second__content_white{
-        min-height: 900px;
-    }
-}
-
-@media (max-width: 534px) {
-  .counter__count {
-    font-size: 64px;
-  }
-  .counter__text {
-    font-size: 16px;
-  }
-}
