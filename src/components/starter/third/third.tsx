@@ -6,9 +6,9 @@ import { CloseIcon } from "../close-icon/closeIcon";
 
 // svg
 import ImgTours from "/public/images/tours.png?jsx";
-import ImgLine1 from "/public/images/line1.svg?raw";
-import ImgLine2 from "/public/images/line2.svg?raw";
-import ImgLine3 from "/public/images/line3.svg?raw";
+import ImgLine1 from "/public/images/line1.svg?jsx";
+import ImgLine2 from "/public/images/line2.svg?jsx";
+import ImgLine3 from "/public/images/line3.svg?jsx";
 
 // styles
 import styles from "./third.module.css";
