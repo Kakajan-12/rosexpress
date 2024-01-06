@@ -26,6 +26,9 @@ export default component$(() => {
       </head>
       <body lang="en">
         <RouterOutlet />
+        <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
       </body>
     </QwikCityProvider>
   );

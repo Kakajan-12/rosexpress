@@ -2,9 +2,7 @@ import ImgTours from "/public/images/tours.png?jsx";
 import ImgLine2 from "/public/images/line2.svg?jsx";
 import ImgLine1 from "/public/images/line1.svg?jsx";
 import ImgLine3 from "/public/images/line3.svg?jsx";
-import ImgLine2 from "/public/images/line2.svg?jsx";
-import ImgLine1 from "/public/images/line1.svg?jsx";
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$, useSignal, QwikIntrinsicElements } from "@builder.io/qwik";
 import styles from "./third.module.css";
 import { Modal, ModalContent } from "@qwik-ui/headless";
 
@@ -13,17 +11,17 @@ export default component$(() => {
   return (
     <section class={styles.third}>
       <div class={styles.third__container}>
-        <h2 class={styles.third__header}>
+        <h2 data-aos="fade-up" class={styles.third__header}>
           <span>Мебельные туры</span> в Фошань под ключ
         </h2>
-        <p class={styles.third__text}>
+        <p data-aos="zoom-in" class={styles.third__text}>
           Предоставляем <span>полный спектр услуг</span> и несём полную
           ответственность на каждом этапе:
         </p>
 
         <div class={styles.third__body}>
           <div class={styles.third__contents}>
-            <div class={styles.content}>
+            <div data-aos="fade-right" class={styles.content}>
               <div class={styles.content__header}>
                 <div class={styles.content__blue}>
                   <svg
@@ -38,13 +36,13 @@ export default component$(() => {
                     </g>
                     <defs>
                       <filter
-                        id="filter0_d_1_208"
-                        x="0"
-                        y="0"
-                        width="50"
-                        height="50"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
+                        // id="filter0_d_1_208"
+                        // x="0"
+                        // y="0"
+                        // width="50"
+                        // height="50"
+                        // filterUnits="userSpaceOnUse"
+                        // color-interpolation-filters="sRGB"
                       >
                         <feFlood
                           flood-opacity="0"
@@ -88,7 +86,7 @@ export default component$(() => {
                 <ImgLine1 />
               </div>
             </div>
-            <div class={styles.content}>
+            <div data-aos="fade-right" class={styles.content}>
               <div class={styles.content__header}>
                 <div class={styles.content__blue}>
                   <svg
@@ -103,13 +101,13 @@ export default component$(() => {
                     </g>
                     <defs>
                       <filter
-                        id="filter0_d_1_208"
-                        x="0"
-                        y="0"
-                        width="50"
-                        height="50"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
+                        // id="filter0_d_1_208"
+                        // x="0"
+                        // y="0"
+                        // width="50"
+                        // height="50"
+                        // filterUnits="userSpaceOnUse"
+                        // color-interpolation-filters="sRGB"
                       >
                         <feFlood
                           flood-opacity="0"
@@ -155,7 +153,7 @@ export default component$(() => {
                 <ImgLine2 />
               </div>
             </div>
-            <div class={styles.content}>
+            <div data-aos="fade-right" class={styles.content}>
               <div class={styles.content__header}>
                 <div class={styles.content__blue}>
                   <svg
@@ -170,13 +168,13 @@ export default component$(() => {
                     </g>
                     <defs>
                       <filter
-                        id="filter0_d_1_208"
-                        x="0"
-                        y="0"
-                        width="50"
-                        height="50"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
+                        // id="filter0_d_1_208"
+                        // x="0"
+                        // y="0"
+                        // width="50"
+                        // height="50"
+                        // filterUnits="userSpaceOnUse"
+                        // color-interpolation-filters="sRGB"
                       >
                         <feFlood
                           flood-opacity="0"
@@ -222,7 +220,7 @@ export default component$(() => {
               </div>
             </div>
           </div>
-          <div class={styles.third__contents}>
+          <div data-aos="zoom-in" class={styles.third__contents}>
             <div class={styles.content__center}></div>
             <div class={styles.content__center_line}>
               <div class={styles.content__center_img}>
@@ -231,7 +229,7 @@ export default component$(() => {
             </div>
           </div>
           <div class={styles.third__contents}>
-            <div class={styles.content}>
+            <div data-aos="fade-left" class={styles.content}>
               <div class={styles.content__header}>
                 <div class={styles.content__blue}>
                   <svg
@@ -246,13 +244,13 @@ export default component$(() => {
                     </g>
                     <defs>
                       <filter
-                        id="filter0_d_1_208"
-                        x="0"
-                        y="0"
-                        width="50"
-                        height="50"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
+                        // id="filter0_d_1_208"
+                        // x="0"
+                        // y="0"
+                        // width="50"
+                        // height="50"
+                        // filterUnits="userSpaceOnUse"
+                        // color-interpolation-filters="sRGB"
                       >
                         <feFlood
                           flood-opacity="0"
@@ -297,7 +295,7 @@ export default component$(() => {
                 <ImgLine1 />
               </div>
             </div>
-            <div class={styles.content}>
+            <div data-aos="fade-left" class={styles.content}>
               <div class={styles.content__header}>
                 <div class={styles.content__blue}>
                   <svg
@@ -312,13 +310,13 @@ export default component$(() => {
                     </g>
                     <defs>
                       <filter
-                        id="filter0_d_1_208"
-                        x="0"
-                        y="0"
-                        width="50"
-                        height="50"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
+                        // id="filter0_d_1_208"
+                        // x="0"
+                        // y="0"
+                        // width="50"
+                        // height="50"
+                        // filterUnits="userSpaceOnUse"
+                        // color-interpolation-filters="sRGB"
                       >
                         <feFlood
                           flood-opacity="0"
@@ -364,7 +362,7 @@ export default component$(() => {
                 <ImgLine2 />
               </div>
             </div>
-            <div class={styles.content__button}>
+            <div data-aos="fade-left" class={styles.content__button}>
               <div class={styles.content__button_wrapper}>
                 <button onClick$={() => (showSig.value = true)}>
                   забронировать тур
@@ -377,13 +375,9 @@ export default component$(() => {
             >
               <ModalContent class="mb-2 pb-4 pt-2">
                 {showSig.value ? (
-                  <iframe
-                    width="800"
-                    height="500"
-                    src="https://www.youtube.com/embed/CJar4el-SrE?si=ou0QLG4LJsH_cK6a"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
+                  <div class="mt-5">
+                    Modal page here
+                  </div>
                 ) : (
                   <></>
                 )}

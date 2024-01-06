@@ -40,6 +40,7 @@
   line-height: 120%;
   letter-spacing: 4px;
   text-transform: uppercase;
+  display: flex;
 }
 
 .counter__text {

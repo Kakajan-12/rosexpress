@@ -9,42 +9,63 @@ export default component$(() => {
   return (
     <section class={styles.second}>
       <div class={["container"]}>
-        <div class={styles.counter}>
+        <div data-aos="fade-up" class={styles.counter}>
           <div class={styles.counter__body}>
             <div class={styles.counter__block}>
               <div class={styles.counter__count}>
-                15+
+                <div data-role="counter" data-value="15" id="counter">
+                  0
+                </div>
+                <div>+</div>
               </div>
               <p class={styles.counter__text}>лет опыта в мебельных турах</p>
             </div>
             <div class={styles.counter__block}>
-              <div class={styles.counter__count}>700+</div>
+              <div class={styles.counter__count}>
+                <div data-role="counter" data-value="700" id="counter">
+                  0
+                </div>
+                <div>+</div>
+              </div>
               <p class={styles.counter__text}>доставленных контейнеров</p>
             </div>
             <div class={styles.counter__block}>
-              <div class={styles.counter__count}>2+</div>
+              <div class={styles.counter__count}>
+                <div data-role="counter" data-value="2" id="counter">
+                  0
+                </div>
+                <div>+</div>
+              </div>
               <p class={styles.counter__text}>
                 млрд руб. сэкономили клиентам на покупке мебели
               </p>
             </div>
             <div class={styles.counter__block}>
-              <div class={styles.counter__count}>15</div>
+              <div class={styles.counter__count}>
+                <div data-role="counter" data-value="15" id="counter">
+                  0
+                </div>
+              </div>
               <p class={styles.counter__text}>опытных сотрудников в России</p>
             </div>
             <div class={styles.counter__block}>
-              <div class={styles.counter__count}>10</div>
+              <div class={styles.counter__count}>
+                <div data-role="counter" data-value="10" id="counter">
+                  0
+                </div>
+              </div>
               <p class={styles.counter__text}>штатных сотрудников в Китае</p>
             </div>
           </div>
         </div>
         <div class={["container"]}>
           <div class={styles.second__wrapper}>
-            <h2 class={styles.second__header}>
+            <h2 data-aos="zoom-in" class={styles.second__header}>
               <span>95% магазинов</span> заказывают мебель из Китая и не только
               в России, но весь остальной мир!
             </h2>
             <div class={styles.second__body}>
-              <div class={styles.second__content_black}>
+              <div data-aos="fade-right" class={styles.second__content_black}>
                 <h3>
                   Онлайн покупка мебели из РФ, <br /> Европы и Китая
                 </h3>
@@ -81,7 +102,7 @@ export default component$(() => {
                 </div>
                 <ImgSimpleDivan />
               </div>
-              <div class={styles.second__content_white}>
+              <div data-aos="fade-left" class={styles.second__content_white}>
                 <h3>
                   Мебельный тур в Китай с <br /> РосЭкспресс
                 </h3>
@@ -120,7 +141,7 @@ export default component$(() => {
                 </div>
                 <ImgBetDivan />
               </div>
-              <div class={styles.second__link}>
+              <div data-aos="fade-up" class={styles.second__link}>
                 <div class={styles.second__link_text}>
                   <p>Нужна помощь специалиста? Задайте свой вопрос</p>
                 </div>

@@ -29,6 +29,14 @@ export const head: DocumentHead = {
     {
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap",
-    }
+    },
+    {
+      rel: "stylesheet",
+      href: "https://cdn.metroui.org.ua/current/metro.css",
+    },
+    {
+      rel: "stylesheet",
+      href: "https://unpkg.com/aos@next/dist/aos.css",
+    },
   ],
 };
