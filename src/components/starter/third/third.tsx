@@ -1,10 +1,17 @@
+import { component$, useSignal } from "@builder.io/qwik";
+import { Modal, ModalContent } from "@qwik-ui/headless";
+
+// components
+import { CloseIcon } from "../close-icon/closeIcon";
+
+// svg
 import ImgTours from "/public/images/tours.png?jsx";
 import ImgLine1 from "/public/images/line1.svg?jsx";
 import ImgLine2 from "/public/images/line2.svg?jsx";
 import ImgLine3 from "/public/images/line3.svg?jsx";
-import { component$, useSignal, QwikIntrinsicElements } from "@builder.io/qwik";
+
+// styles
 import styles from "./third.module.css";
-import { Modal, ModalContent } from "@qwik-ui/headless";
 
 export default component$(() => {
   const showSig = useSignal(false);
@@ -36,13 +43,12 @@ export default component$(() => {
                     </g>
                     <defs>
                       <filter
-                        // id="filter0_d_1_208"
-                        // x="0"
-                        // y="0"
-                        // width="50"
-                        // height="50"
-                        // filterUnits="userSpaceOnUse"
-                        // color-interpolation-filters="sRGB"
+                        id="filter0_d_1_208"
+                        x="0"
+                        y="0"
+                        width="50"
+                        height="50"
+                        filterUnits="userSpaceOnUse"
                       >
                         <feFlood
                           flood-opacity="0"
@@ -101,13 +107,12 @@ export default component$(() => {
                     </g>
                     <defs>
                       <filter
-                        // id="filter0_d_1_208"
-                        // x="0"
-                        // y="0"
-                        // width="50"
-                        // height="50"
-                        // filterUnits="userSpaceOnUse"
-                        // color-interpolation-filters="sRGB"
+                        id="filter0_d_1_208"
+                        x="0"
+                        y="0"
+                        width="50"
+                        height="50"
+                        filterUnits="userSpaceOnUse"
                       >
                         <feFlood
                           flood-opacity="0"
@@ -168,13 +173,12 @@ export default component$(() => {
                     </g>
                     <defs>
                       <filter
-                        // id="filter0_d_1_208"
-                        // x="0"
-                        // y="0"
-                        // width="50"
-                        // height="50"
-                        // filterUnits="userSpaceOnUse"
-                        // color-interpolation-filters="sRGB"
+                        id="filter0_d_1_208"
+                        x="0"
+                        y="0"
+                        width="50"
+                        height="50"
+                        filterUnits="userSpaceOnUse"
                       >
                         <feFlood
                           flood-opacity="0"
@@ -244,13 +248,12 @@ export default component$(() => {
                     </g>
                     <defs>
                       <filter
-                        // id="filter0_d_1_208"
-                        // x="0"
-                        // y="0"
-                        // width="50"
-                        // height="50"
-                        // filterUnits="userSpaceOnUse"
-                        // color-interpolation-filters="sRGB"
+                        id="filter0_d_1_208"
+                        x="0"
+                        y="0"
+                        width="50"
+                        height="50"
+                        filterUnits="userSpaceOnUse"
                       >
                         <feFlood
                           flood-opacity="0"
@@ -310,13 +313,12 @@ export default component$(() => {
                     </g>
                     <defs>
                       <filter
-                        // id="filter0_d_1_208"
-                        // x="0"
-                        // y="0"
-                        // width="50"
-                        // height="50"
-                        // filterUnits="userSpaceOnUse"
-                        // color-interpolation-filters="sRGB"
+                        id="filter0_d_1_208"
+                        x="0"
+                        y="0"
+                        width="50"
+                        height="50"
+                        filterUnits="userSpaceOnUse"
                       >
                         <feFlood
                           flood-opacity="0"
@@ -375,9 +377,7 @@ export default component$(() => {
             >
               <ModalContent class="mb-2 pb-4 pt-2">
                 {showSig.value ? (
-                  <div class="mt-5">
-                    Modal page here
-                  </div>
+                  <div class="mt-5">Modal page here</div>
                 ) : (
                   <></>
                 )}
@@ -395,19 +395,3 @@ export default component$(() => {
     </section>
   );
 });
-
-export function CloseIcon(props: QwikIntrinsicElements["svg"], key: string) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      {...props}
-      key={key}
-    >
-      <path
-        fill="currentColor"
-        d="m12 13.4l2.9 2.9q.275.275.7.275t.7-.275q.275-.275.275-.7t-.275-.7L13.4 12l2.9-2.9q.275-.275.275-.7t-.275-.7q-.275-.275-.7-.275t-.7.275L12 10.6L9.1 7.7q-.275-.275-.7-.275t-.7.275q-.275.275-.275.7t.275.7l2.9 2.9l-2.9 2.9q-.275.275-.275.7t.275.7q.275.275.7.275t.7-.275l2.9-2.9Zm0 8.6q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z"
-      ></path>
-    </svg>
-  );
-}

@@ -117,7 +117,7 @@
 
 .third__contents:last-child .content {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
 }
 
@@ -175,8 +175,8 @@
 .content__button {
   width: 100%;
   display: flex;
-  justify-content: end;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .content__button_wrapper {
@@ -273,11 +273,10 @@
   .content__button {
     justify-content: center;
   }
-  .third__contents:last-child .content__text{
+  .third__contents:last-child .content__text {
     text-align: center;
   }
-  .third__contents:last-child .content__header{
+  .third__contents:last-child .content__header {
     flex-direction: row;
   }
-
 }
