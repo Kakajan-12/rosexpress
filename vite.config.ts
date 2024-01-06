@@ -2,11 +2,11 @@ import { defineConfig } from "vite";
 import { qwikVite } from "@builder.io/qwik/optimizer";
 import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import svgr from 'vite-plugin-svgr' 
+import svgr from "@svgr/rollup";
 
 export default defineConfig(() => {
   return {
-    plugins: [qwikCity(), qwikVite(), tsconfigPaths(), svgr(),],
+    plugins: [qwikCity(), qwikVite(), tsconfigPaths(), svgr()],
     dev: {
       headers: {
         "Cache-Control": "public, max-age=0",

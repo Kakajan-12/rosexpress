@@ -6,9 +6,9 @@ import { CloseIcon } from "../close-icon/closeIcon";
 
 // svg
 import ImgTours from "/public/images/tours.png?jsx";
-// import ImgLine1 from "/public/images/line1.svg?jsx";
-// import ImgLine2 from "/public/images/line2.svg?jsx";
-// import ImgLine3 from "/public/images/line3.svg?jsx";
+import ImgLine1 from "/public/images/line1.svg?jsx";
+import ImgLine2 from "/public/images/line2.svg?jsx";
+import ImgLine3 from "/public/images/line3.svg?jsx";
 
 // styles
 import styles from "./third.module.css";
@@ -88,7 +88,9 @@ export default component$(() => {
               <p class={styles.content__text}>
                 От оформления визы до бронирования гостиницы
               </p>
-              <div class={styles.content__line}>{/* <ImgLine1 /> */}</div>
+              <div class={styles.content__line}>
+                <ImgLine1 />
+              </div>
             </div>
             <div data-aos="fade-right" class={styles.content}>
               <div class={styles.content__header}>
@@ -152,7 +154,9 @@ export default component$(() => {
                 производителя и перед отправкой. Предоставляем вам видео и
                 фотоотчёт перед отправкой
               </p>
-              <div class={styles.content__line}>{/* <ImgLine2 /> */}</div>
+              <div class={styles.content__line}>
+                <ImgLine2 />
+              </div>
             </div>
             <div data-aos="fade-right" class={styles.content}>
               <div class={styles.content__header}>
@@ -215,7 +219,9 @@ export default component$(() => {
                 Готовим все сопроводительные бумаги, выполняем растаможивание и
                 доставляем товары прямо до вашей двери
               </p>
-              <div class={styles.content__line}>{/* <ImgLine3 /> */}</div>
+              <div class={styles.content__line}>
+                <ImgLine3 />
+              </div>
             </div>
           </div>
           <div data-aos="zoom-in" class={styles.third__contents}>
@@ -288,7 +294,9 @@ export default component$(() => {
                 Перевозим собственной ТК. Гарантируем, что все будет доставлено
                 без повреждений
               </p>
-              <div class={styles.content__line}>{/* <ImgLine1 /> */}</div>
+              <div class={styles.content__line}>
+                <ImgLine1 />
+              </div>
             </div>
             <div data-aos="fade-left" class={styles.content}>
               <div class={styles.content__header}>
@@ -352,7 +360,9 @@ export default component$(() => {
               <p class={styles.content__text}>
                 Более 10 лет опыта индивидуального подбора мебели
               </p>
-              <div class={styles.content__line}>{/* <ImgLine2 /> */}</div>
+              <div class={styles.content__line}>
+                <ImgLine2 />
+              </div>
             </div>
             <div data-aos="fade-left" class={styles.content__button}>
               <div class={styles.content__button_wrapper}>

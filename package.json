@@ -46,8 +46,8 @@
   },
   "dependencies": {
     "@qwik-ui/headless": "^0.2.0",
+    "@svgr/rollup": "^8.1.0",
     "hamburger-qwik": "^0.1.1",
-    "sharp": "^0.33.1",
-    "vite-plugin-svgr": "^4.2.0"
+    "sharp": "^0.33.1"
   }
 }
