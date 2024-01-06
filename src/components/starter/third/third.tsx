@@ -1,6 +1,6 @@
 import ImgTours from "/public/images/tours.png?jsx";
-import ImgLine2 from "/public/images/line2.svg?jsx";
 import ImgLine1 from "/public/images/line1.svg?jsx";
+import ImgLine2 from "/public/images/line2.svg?jsx";
 import ImgLine3 from "/public/images/line3.svg?jsx";
 import { component$, useSignal, QwikIntrinsicElements } from "@builder.io/qwik";
 import styles from "./third.module.css";
