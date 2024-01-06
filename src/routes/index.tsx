@@ -10,7 +10,7 @@ export default component$(() => {
     <>
       <Hero />
       <Second />
-      <Third/>
+      <Third />
     </>
   );
 });
